@@ -67,8 +67,6 @@ A categorized list of technical skills:
 
 ---
 
----
-
 ### 💡 Inspiration
 
 ```markdown
