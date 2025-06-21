@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RangeshPandian PT | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="preloader">
+    <img src="assets/profile.jpg" alt="Loading..." />
+  </div>
+
+  <button id="nav-toggle" style="position: fixed; top: 20px; right: 20px; z-index: 1000; padding: 10px 15px; background: linear-gradient(to right, #00c6ff, #0072ff); color: white; border: none; cursor: pointer; border-radius: 5px; font-weight: bold;">Menu</button>
+<nav class="navbar" id="navbar" style="display: none; position: fixed; top: 60px; right: 20px; background: linear-gradient(to right, #00c6ff, #0072ff); padding: 10px 20px; border-radius: 8px; z-index: 999; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  <ul style="list-style: none; margin: 0; padding: 0; text-align: right;">
+    <li><a href="#about" style="color: white; text-decoration: none; display: block; padding: 8px 0;">About</a></li>
+    <li><a href="#skills" style="color: white; text-decoration: none; display: block; padding: 8px 0;">Skills</a></li>
+    <li><a href="#education" style="color: white; text-decoration: none; display: block; padding: 8px 0;">Education</a></li>
+    <li><a href="#experience" style="color: white; text-decoration: none; display: block; padding: 8px 0;">Experience</a></li>
+    <li><a href="#projects" style="color: white; text-decoration: none; display: block; padding: 8px 0;">Projects</a></li>
+    <li><a href="#contact" style="color: white; text-decoration: none; display: block; padding: 8px 0;">Contact</a></li>
+  </ul>
+</nav>
+<script>
+  const navToggle = document.getElementById("nav-toggle");
+  const navbar = document.getElementById("navbar");
+  navToggle.addEventListener("click", function () {
+    navbar.style.display = navbar.style.display === "block" ? "none" : "block";
+  });
+
+  // GSAP animation for navbar dropdown
+  gsap.set("#navbar", { opacity: 0, y: -10 });
+  navToggle.addEventListener("click", function () {
+    const isVisible = navbar.style.display === "block";
+    if (isVisible) {
+      gsap.to("#navbar", { duration: 0.3, opacity: 1, y: 0, display: "block" });
+    } else {
+      gsap.to("#navbar", { duration: 0.3, opacity: 0, y: -10, onComplete: () => { navbar.style.display = "none"; } });
+    }
+  });
+</script>
+
+  <header class="fade-in">
+    <h1 style="color: #0072ff; background: linear-gradient(to right, #00c6ff, #0072ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: fadeIn 2s ease-in-out forwards;">RANGESHPANDIAN PT</h1>
+    <p id="typing-text" style="font-family: 'Orbitron', sans-serif; font-size: 1.2rem; color: #00c6ff; letter-spacing: 1px;"></p>
+    <a class="resume-btn" href="https://drive.google.com/file/d/1kXea2t_2F6xedsLh0hKUDmsGnY7qqNne/view?usp=sharing" target="_blank">View Resume</a>
+  </header>
+
+  <section id="about" class="reveal-section" style="font-family: 'Poppins', sans-serif; text-align: justify; padding: 40px 20px; line-height: 1.8; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+  <div style="flex: 1; display: flex; justify-content: center;">
+    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic" style="width: 300px; border-radius: 50%; border: 6px solid #00c6ff; box-shadow: 0 12px 24px rgba(0,0,0,0.3); transition: transform 0.4s ease-in-out;" onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'" />
+  </div>
+  <div style="flex: 2;">  
+    <h2>💼 About Me</h2>
+    <p>👋 Hello! I’m <strong>RangeshPandian PT</strong>, a passionate and curious <strong>Computer Science and Engineering</strong> undergraduate at <em>SRM Institute of Science and Technology</em>. I specialize in <strong>Web Development</strong> and <strong>Data Science</strong> and love blending creativity with logic to solve real-world problems. 💡 My journey in tech began with curiosity and has grown into a deep passion for building elegant websites and deriving insights from data.</p>
+<p>💻 I enjoy exploring modern JavaScript libraries like <strong>React.js</strong>, building RESTful APIs with <strong>Node.js</strong>, and experimenting with frontend animations using <strong>GSAP</strong>. I'm also highly enthusiastic about <strong>Machine Learning</strong> and frequently work with <strong>Python</strong>, <strong>scikit-learn</strong>, and <strong>Pandas</strong> to uncover trends and build predictive models. 📊</p>
+<p>🌱 Beyond coding, I stay updated through tech blogs, contribute to open-source, and actively participate in hackathons and coding contests. I'm motivated by the ever-evolving nature of technology and continuously seek to improve my skills and stay ahead in the field. 🚀</p>
+    <!-- trimmed for brevity -->
+  </section>
+
+  <section id="skills" class="reveal-section" style="color: white; font-family: 'Roboto', sans-serif;">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.js & Node.js</li>
+      <li>Python & Pandas</li>
+      <li>Machine Learning (scikit-learn)</li>
+      <li>SQL & MongoDB</li>
+      <li>Git & GitHub</li>
+      <li>Data Visualization (Matplotlib, Tableau)</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="reveal-section" style="color: white; font-family: 'Ubuntu', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 40px;">
+<h2>Experience</h2>
+<div class="experience-entry" style="max-width: 700px; text-align: center; margin-bottom: 30px;">
+  <h3>Web Development Intern – CodSoft</h3>
+  <p><em>May 2024 – June 2024</em></p>
+  <p>Worked on multiple frontend projects including building a calculator, landing page, and portfolio website. Gained hands-on experience in HTML, CSS, JavaScript, and responsive design.</p>
+</div>
+<div class="experience-entry">
+  <h3>Data Science Intern – Oasis Infobyte</h3>
+  <p><em>March 2024 – April 2024</em></p>
+  <p>Built machine learning models for sales prediction and data visualization using Python, Pandas, and scikit-learn. Developed insights dashboards to support business decisions.</p>
+</div>
+<div class="experience-entry">
+  <h3>AI and Python with Data Science – Pantech eLearning</h3>
+  <p><em>January 2024 – February 2024</em></p>
+  <p>Completed project-based learning in AI, Python fundamentals, and applied Data Science techniques. Implemented simple neural networks and prediction systems.</p>
+</div>
+</section>
+<section id="education" class="reveal-section" style="color: white; font-family: 'Merriweather', serif;">
+  <h2>Education</h2>
+  <div class="education-entry">
+    <h3>SRM Institute of Science and Technology</h3>
+    <p><em>Bachelor of Technology in Computer Science and Engineering</em></p>
+    <p>Expected Graduation: 2028</p>
+    <p>Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Web Development, Machine Learning.</p>
+  </div>
+</section>
+<section id="experience" class="reveal-section" style="text-align: center; padding: 20px; max-width: 800px; margin: 0 auto; font-family: 'Poppins', sans-serif;">
+
+    <h2>Experience</h2>
+    <div class="experience-entry">
+      <h3>Web Development Intern – CodSoft</h3>
+      <p><em>May 2024 – June 2024</em></p>
+      <p>Worked on multiple frontend projects including building a calculator, landing page, and portfolio website. Gained hands-on experience in HTML, CSS, JavaScript, and responsive design.</p>
+    </div>
+    <div class="experience-entry">
+      <h3>Data Science Intern – CodeAlpha</h3>
+      <p><em>March 2024 – April 2024</em></p>
+      <p>Built machine learning models for sales prediction and data visualization using Python, Pandas, and scikit-learn. Developed insights dashboards to support business decisions.</p>
+    </div>
+    <div class="experience-entry">
+      <h3>AI and Python with Data Science – Pinnacle Labs</h3>
+      <p><em>January 2024 – February 2024</em></p>
+      <p>Completed project-based learning in AI, Python fundamentals, and applied Data Science techniques. Implemented simple neural networks and prediction systems.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal-section" style="color: white; font-family: 'Quicksand', sans-serif;">
+    <h2>🚀 Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>🧮 Calculator App</h3>
+        <p>A simple and functional calculator built using HTML, CSS, and JavaScript. Supports dark mode and basic operations.</p>
+        <a href="https://github.com/RangeshPandianPT/CodeAlpha_Calculator.git" class="btn" target="_blank">🔗 View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>🌐 Landing Website</h3>
+        <p>A professional landing page with modern design, ideal for startups or product showcases.</p>
+        <a href="https://github.com/RangeshPandianPT/CODESOFT_Landing-Page.git" class="btn" target="_blank">🔗 View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>🛍️ Mini E-commerce Store</h3>
+        <p>Built with responsive layout and essential store components. Ideal for learning full-stack basics.</p>
+        <a href="https://github.com/RangeshPandianPT/FUTURE_FS_02.git" class="btn" target="_blank">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal-section" style="text-align: center; padding: 40px; font-family: 'Poppins', sans-serif;">
+  <h2>📬 Contact Me</h2>
+  <p style="margin-bottom: 20px; font-size: 18px;">Feel free to reach out through any platform below:</p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+    <a href="mailto:rangeshpandian@gmail.com" target="_blank" style="padding: 12px 28px; background: linear-gradient(to right, #00c6ff, #0072ff); color: white; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;">📧 Email Me</a>
+    <a href="https://www.instagram.com/_rangesh_07" target="_blank" style="padding: 12px 28px; background: linear-gradient(to right, #f09433, #e6683c); color: white; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;">📸 Instagram</a>
+    <a href="https://www.linkedin.com/in/rangeshpandian-pt-428b04325" target="_blank" style="padding: 12px 28px; background: linear-gradient(to right, #0072b1, #00a0dc); color: white; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;">💼 LinkedIn</a>
+  </div>
+</section>
+
+  <footer class="fade-in">
+    <p>&copy; 2025 RangeshPandian PT. All rights reserved.</p>
+    <p>Made with ❤️ by RangeshPandian</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+<script>
+  const typingText = document.getElementById("typing-text");
+  const text = "🚀 Computer Science and Engineering Student";
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      typingText.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(type, 80);
+    } else {
+      typingText.innerHTML += '<span class="cursor" style="color: #00c6ff;">|</span>';
+    }
+  }
+
+  window.onload = function() {
+    type();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal");
+        }
+      });
+    });
+    const profileImg = document.querySelector(".profile-pic");
+    observer.observe(profileImg);
+  };
+</script>
+<style>
+  .cursor {
+    animation: blink 1s step-start infinite;
+    color: #0072ff;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .profile-pic {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .reveal-section .profile-pic.reveal {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</body>
+</html>
