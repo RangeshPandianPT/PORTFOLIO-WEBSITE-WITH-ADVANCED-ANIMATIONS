@@ -33,7 +33,8 @@ Welcome to the official portfolio of **RANGESHPANDIAN PT** – a passionate Comp
 
 ---
 
-** PREVIEW 
+## OUTPUT
+
 ![Image](https://github.com/user-attachments/assets/3c735756-ad43-4aa9-84e9-7fe3da83c42c)
 
 ![Image](https://github.com/user-attachments/assets/f9158c9d-f218-44e2-9a2c-267dad7a9897)
