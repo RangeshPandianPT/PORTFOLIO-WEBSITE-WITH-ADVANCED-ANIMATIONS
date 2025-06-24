@@ -10,7 +10,7 @@ DOMAIN: WEB DEVELOPMENT
 
 DURATION : 4 WEEKS 
 
-MWNTOR : NEELA SANTHOS 
+MENTOR : NEELA SANTHOS 
 
 ## 📁 RangeshPandian PT – Developer Portfolio
 
