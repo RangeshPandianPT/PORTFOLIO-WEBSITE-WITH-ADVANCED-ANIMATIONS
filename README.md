@@ -1,17 +1,3 @@
-# PORTFOLIO-WEBSITE-WITH-ADVANCED-ANIMATIONS
-
-COMPANY : CODTECH IT SOLUTIONS
-
-NAME : MUZAMMIL AHMED 
-
-INTERN ID : CT04DG2827
-
-DOMAIN: WEB DEVELOPMENT 
-
-DURATION : 4 WEEKS 
-
-MENTOR : NEELA SANTHOS 
-
 ## 📁 RangeshPandian PT – Developer Portfolio
 
 Welcome to the official portfolio of **RANGESHPANDIAN PT** – a passionate Computer Science and Engineering student, focused on **Web Development** and **Data Science**.
